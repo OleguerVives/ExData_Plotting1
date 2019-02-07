@@ -21,7 +21,7 @@ HPC <- read.table("./data/household_power_consumption.txt", header=TRUE, sep=";"
 HPC <- subset(HPC, Date %in% c("1/2/2007", "2/2/2007"))
 head(HPC)
 
-# Adjustinc the class of variables that are going to be used in the plot
+# Adjusting the class of variables that are going to be used in the plot
 class(HPC$Global_active_power)
 HPC$Global_active_power <- as.numeric(HPC$Global_active_power)
 class(HPC$Global_active_power)
